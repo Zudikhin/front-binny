@@ -3222,6 +3222,54 @@ body {
   background: url(../img/founder/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .founder {
+    padding-bottom: 100px;
+  }
+}
+
+.founder__main h2 {
+  font-family: "Montserrat-ExtraBold";
+  font-size: 23px;
+  color: black;
+  margin-top: 50px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .founder__main h2 {
+    font-size: 33px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .founder__main h2 {
+    margin-top: 76px;
+  }
+}
+
+.founder__content {
+  margin-top: 30px;
+}
+
+@media (min-width: 1200px) {
+  .founder__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1440px) {
+  .founder__content {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .founder__content .about {
@@ -3268,4 +3316,75 @@ body {
   position: absolute;
   right: -30px;
   bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .founder__content .text {
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 100px;
+    margin-top: 50px;
+  }
+  .founder__content .text:after {
+    content: "";
+    background: url(../img/founder/quotes-1.png);
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 82px;
+    height: 60px;
+  }
+  .founder__content .text:before {
+    content: "";
+    background: url(../img/founder/quotes.png);
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 82px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .founder__content .text {
+    padding: 0px 60px;
+    margin-top: 20px;
+  }
+  .founder__content .text:after {
+    left: -40px;
+    top: -20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .founder__content .text {
+    padding: 0px;
+  }
+  .founder__content .text:after {
+    left: -100px;
+  }
+  .founder__content .text::before {
+    right: -30px;
+  }
+}
+
+.founder__content .text p {
+  font-family: "Montserrat-Regular";
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  margin-bottom: 0px;
+  line-height: 18px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .founder__content .text p {
+    text-align: left;
+  }
+}
+
+.founder__content .text p span {
+  font-family: "Montserrat-SemiBoldItalic";
 }
