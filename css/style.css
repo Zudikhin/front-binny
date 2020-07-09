@@ -5248,7 +5248,13 @@ body {
 }
 
 .ask__btns {
-  margin-top: -80px;
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .ask__btns {
+    margin-top: -80px;
+  }
 }
 
 @media (min-width: 1200px) {
