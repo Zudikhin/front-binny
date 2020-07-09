@@ -69,4 +69,34 @@ $(document).ready(function () {
       return '<button class="tab"></button>';
     },
   });
+
+  $(".slider .slider__item").each(function () {
+    var slider = $(this);
+    slider.slick({
+      dots: false,
+      accessibility: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: $(".professor__slider_prev"),
+      nextArrow: $(".professor__slider_next"),
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+
+    var sLightbox = $(this);
+    sLightbox.slickLightbox({
+      src: "src",
+      itemSelector: ".image img",
+      caption: function (element, info) {
+        return $(element).attr("title");
+      },
+    });
+  });
 });

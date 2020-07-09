@@ -1,0 +1,164 @@
+﻿.slick-lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: black;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+.slick-lightbox .slick-loading .slick-list {
+  background-color: transparent;
+}
+.slick-lightbox .slick-prev {
+  left: 15px;
+  position: absolute;
+  color: rgba(0, 0, 0, 0);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 40px;
+  display: none !important;
+  z-index: 9;
+}
+@media (min-width: 576px) {
+  .slick-lightbox .slick-prev {
+    display: block !important;
+  }
+}
+.slick-lightbox .slick-prev:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  background: url(../img/professor/arrow-left-modal.png);
+  background-size: 100% 100%;
+  right: 0;
+}
+
+.slick-lightbox .slick-next {
+  right: 15px;
+  position: absolute;
+  color: rgba(0, 0, 0, 0);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 40px;
+  display: none !important;
+}
+
+@media (min-width: 576px) {
+  .slick-lightbox .slick-next {
+    display: block !important;
+  }
+}
+
+.slick-lightbox .slick-next:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  background: url(../img/professor/arrow-right-modal.png);
+  background-size: 100% 100%;
+  left: 0;
+}
+
+.slick-lightbox-hide {
+  opacity: 0;
+}
+.slick-lightbox-hide.slick-lightbox-ie {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.slick-lightbox-hide-init {
+  position: absolute;
+  top: -9999px;
+  opacity: 0;
+}
+.slick-lightbox-hide-init.slick-lightbox-ie {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.slick-lightbox-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slick-lightbox-slick-item {
+  text-align: center;
+  overflow: hidden;
+}
+.slick-lightbox-slick-item:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+.slick-caption-bottom
+  .slick-lightbox-slick-item
+  .slick-lightbox-slick-item
+  .slick-lightbox-slick-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.slick-caption-dynamic
+  .slick-lightbox-slick-item
+  .slick-lightbox-slick-item
+  .slick-lightbox-slick-caption {
+  display: block;
+  text-align: center;
+}
+.slick-lightbox-slick-item-inner {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 90%;
+  max-height: 90%;
+}
+.slick-lightbox-slick-img {
+  margin: 0 auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  margin-bottom: 10px;
+}
+.slick-lightbox-slick-caption {
+  margin: 10px 0 0;
+  color: white;
+}
+.slick-lightbox-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  padding: 0;
+  border: none;
+}
+.slick-lightbox-close:focus {
+  outline: none;
+}
+.slick-lightbox-close:before {
+  content: "";
+  background: url(../img/professor/close.png);
+  background-position: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+}
