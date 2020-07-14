@@ -4067,6 +4067,7 @@ body {
 @media (min-width: 1200px) {
   .nutrition__main .img {
     margin-top: 136px;
+    height: 312px;
   }
   .nutrition__main .img img {
     width: 500px;
@@ -4075,6 +4076,9 @@ body {
 }
 
 @media (min-width: 1440px) {
+  .nutrition__main .img {
+    height: 400px;
+  }
   .nutrition__main .img img {
     width: 632px;
     height: 400px;
@@ -4244,6 +4248,7 @@ body {
 @media (min-width: 1200px) {
   .ecospace__main .img {
     margin-top: 170px;
+    height: 338px;
   }
   .ecospace__main .img img {
     width: 500px;
@@ -4252,6 +4257,9 @@ body {
 }
 
 @media (min-width: 1440px) {
+  .ecospace__main .img {
+    height: 420px;
+  }
   .ecospace__main .img img {
     width: 610px;
     height: 420px;
@@ -4535,6 +4543,7 @@ body {
         -ms-flex-order: 2;
             order: 2;
     margin-top: 167px;
+    height: 342px;
   }
   .sleep__main .img img {
     width: 500px;
@@ -4543,6 +4552,9 @@ body {
 }
 
 @media (min-width: 1440px) {
+  .sleep__main .img {
+    height: 420px;
+  }
   .sleep__main .img img {
     width: 610px;
     height: 420px;
@@ -4937,7 +4949,8 @@ body {
   .methodology__main .img:after {
     width: 550px;
     height: 392px;
-    bottom: 80px;
+    bottom: auto;
+    top: 30px;
     left: -20px;
   }
 }
@@ -4947,6 +4960,7 @@ body {
     width: 610px;
     height: 420px;
     bottom: 45px;
+    top: 40px;
   }
 }
 
@@ -4971,6 +4985,7 @@ body {
 @media (min-width: 1200px) {
   .methodology__main .img {
     margin-top: 156px;
+    height: 392px;
   }
   .methodology__main .img img {
     width: 550px;
@@ -4981,6 +4996,7 @@ body {
 @media (min-width: 1440px) {
   .methodology__main .img {
     margin-left: 74px;
+    height: 420px;
   }
   .methodology__main .img img {
     width: 610px;
@@ -5555,7 +5571,8 @@ body {
     width: 512px;
     height: 300px;
     right: -30px;
-    bottom: 150px;
+    bottom: auto;
+    top: 30px;
   }
 }
 
@@ -5563,7 +5580,8 @@ body {
   .cave__main .img:after {
     width: 610px;
     height: 380px;
-    bottom: 115px;
+    bottom: auto;
+    top: 20px;
     right: -40px;
   }
 }
@@ -5592,6 +5610,7 @@ body {
         -ms-flex-order: 2;
             order: 2;
     margin-top: 190px;
+    height: 312px;
   }
   .cave__main .img img {
     width: 500px;
