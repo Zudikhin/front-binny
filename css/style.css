@@ -871,6 +871,7 @@ body {
   margin-top: 20px;
   min-height: 70px;
   width: 280px;
+  line-height: 20px;
 }
 
 .difference__item .description {
@@ -879,6 +880,7 @@ body {
   color: black;
   text-align: center;
   width: 280px;
+  line-height: 16px;
 }
 
 .difference__item .description span {
@@ -1425,7 +1427,7 @@ body {
 @media (min-width: 992px) {
   .business__text .tagline {
     text-align: left;
-    font-size: 23px;
+    font-size: 24px;
   }
 }
 
@@ -3927,6 +3929,8 @@ body {
   font-family: "Montserrat-ExtraBold";
   color: black;
   font-size: 22px;
+  text-transform: uppercase;
+  line-height: 30px;
 }
 
 .care__main_content p {
@@ -4938,7 +4942,7 @@ body {
 @media (min-width: 1440px) {
   .presentation__healthy_main .img__main {
     top: 74px;
-    right: 120px;
+    right: 50px;
   }
 }
 
@@ -5775,6 +5779,18 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .ask__main .text h3 {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ask__main .text h3 {
+    margin-top: 50px;
+  }
+}
+
 .ask__main .text p {
   font-family: "Montserrat-SemiBold";
   color: black;
@@ -5787,6 +5803,12 @@ body {
 @media (min-width: 992px) {
   .ask__main .text p {
     text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ask__main .text p {
+    margin-top: 40px;
   }
 }
 
