@@ -99,4 +99,8 @@ $(document).ready(function () {
       },
     });
   });
+
+  $("#result").on("hidden.bs.modal", function (e) {
+    $("#result iframe").attr("src", $("#result iframe").attr("src"));
+  });
 });

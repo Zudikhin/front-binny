@@ -30,7 +30,9 @@
                 <a class="tel" href="tel:8 800 999 02 02"
                   ><img src="img/header/tel.png" alt="" />8 800 999 02 02</a
                 >
-                <button class="call">Заказать звонок</button>
+                <button data-toggle="modal" data-target="#result" class="call">
+                  Заказать звонок
+                </button>
               </div>
             </div>
             <div class="header__desktop">
@@ -45,7 +47,13 @@
                   <a class="tel" href="tel:8 800 999 02 02"
                     ><img src="img/header/tel.png" alt="" />8 800 999 02 02</a
                   >
-                  <button class="call">Заказать звонок</button>
+                  <button
+                    data-toggle="modal"
+                    data-target="#result"
+                    class="call"
+                  >
+                    Заказать звонок
+                  </button>
                 </div>
               </div>
               <div class="header__desktop_nav">
@@ -97,7 +105,11 @@
                 заботится и поддерживает Вас <br />
                 ежедневно и круглый год!
               </p>
-              <button class="consultation">
+              <button
+                data-toggle="modal"
+                data-target="#presentation"
+                class="consultation"
+              >
                 <img src="img/main/book.png" alt="" />получить презентацию
                 франшизы
               </button>
@@ -1257,22 +1269,22 @@
                 <div class="partner__slider_item">
                   <div class="info">
                     <div class="avatar">
-                      <img src="img/partner/photo.png" alt="" />
+                      <img src="img/partner/nekrasova.jpg" alt="" />
                     </div>
-                    <h5>Иван Иванов</h5>
-                    <span>г. Москва</span>
+                    <h5>Татьяна Одношевная</h5>
+                    <span>г. Краснодар</span>
                     <ul>
                       <li>
                         <img src="img/partner/elips.svg" alt="" />
-                        <p>Количество детских садов <span>- 2</span></p>
+                        <p>Количество детских садов <span>- 1</span></p>
                       </li>
                       <li>
                         <img src="img/partner/elips.svg" alt="" />
-                        <p>Количество деток <span>- 125</span></p>
+                        <p>Количество деток <span>- 35</span></p>
                       </li>
                       <li>
                         <img src="img/partner/elips.svg" alt="" />
-                        <p>Количество договоров <span>- 80</span></p>
+                        <p>Общая площадь <span>- 250 м2</span></p>
                       </li>
                       <li>
                         <img src="img/partner/elips.svg" alt="" />
@@ -1296,43 +1308,9 @@
                         </button>
                       </div>
                     </div>
-                    <p>
-                      Наш детский сад – это удивительная страна детства. В ней
-                      всё возможно, всё позволено. Здесь слабый и беззащитный
-                      может стать сильным, смелым, всемогущим, а скучное и
-                      неинтересное может показаться довольно весёлым и забавным.
-                    </p>
-                    <p>
-                      В нашей стране детства каждый может преодолеть все
-                      невзгоды и неприятности, сделать мир ярким, красочным и
-                      интересным. Всё что мы делаем в нашем детском саду – мы
-                      делаем ради них, наших детей, ради того, чтобы они росли и
-                      развивались.
-                    </p>
-                    <p>
-                      Наши сотрудники, настоящие профессионалы своего дела. Ведь
-                      именно они самые трудолюбивые, творческие, всё умеющие,
-                      болеющие за всё душой, любящие детей люди.
-                    </p>
-                    <p>
-                      Первый раз, переступая порог детского сада, ребёнок
-                      старается поскорее спрятаться за маму или бабушку,
-                      настолько громкой и бурной кажется новая жизнь по
-                      сравнению с размеренной, домашней обстановкой, но
-                      постепенно посещение детского сада начинает приносить
-                      удовольствие.
-                    </p>
-                    <p>
-                      С самого утра, подгоняя родителей, ребёнок выбегает из
-                      родного дома, торопясь встретиться с новыми друзьями и
-                      доброй воспитательницей. Нелюбимая, манная каша быстро
-                      съедается наперегонки, чтобы вырасти большим и сильным.
-                      Помогая друг другу одеться, малыши толпятся в раздевалке,
-                      нетерпеливо дожидаясь разрешения поскорее побежать на
-                      детскую площадку. Веселые, шумные игры и маленькие
-                      состязания юных спортсменов заряжают ребят энергией и
-                      возбуждают аппетит.
-                    </p>
+                    <iframe
+                      src="https://www.youtube.com/embed/668nUCeBHyY"
+                    ></iframe>
                   </div>
                 </div>
               </div>
@@ -1573,9 +1551,232 @@
       </div>
     </footer>
 
+    <div
+      class="modal fade modal-callback"
+      id="callback"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <h3>
+              Заказать <br />
+              обратный звонок
+            </h3>
+            <p class="tagline">
+              Оставьте свои контактные данные, <br />
+              и мы перезвоним Вам:
+            </p>
+            <form action="">
+              <input type="text" placeholder="Введите имя*" />
+              <input type="tel" placeholder="Введите телефон*" />
+              <input type="submit" value="Заказать звонок" />
+              <label for="">
+                <input type="checkbox" />
+                <p>
+                  Настоящим подтверждаю, что я ознакомлен с
+                  <a href="#">политикой конфиденциальности</a>
+                </p>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade modal-callback"
+      id="presentation"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <h3>
+              Получить <br />
+              презентацию франшизы
+            </h3>
+            <p class="tagline">
+              Оставьте свои контактные данные, <br />
+              и мы пришлем Вам презентацию
+            </p>
+            <form action="">
+              <input required type="text" placeholder="Введите имя*" />
+              <input required type="tel" placeholder="Введите телефон*" />
+              <input type="submit" value="получить по смс" />
+              <label for="">
+                <input type="checkbox" />
+                <p>
+                  Настоящим подтверждаю, что я ознакомлен с
+                  <a href="#">политикой конфиденциальности</a>
+                </p>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade modal-callback"
+      id="program"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <h3>
+              скачать презентацию <br />
+              всех программ
+            </h3>
+            <p class="tagline">
+              Оставьте свои контактные данные, <br />
+              и мы пришлем Вам презентацию
+            </p>
+            <form action="">
+              <input type="text" placeholder="Введите имя*" />
+              <input type="tel" placeholder="Введите телефон*" />
+              <input type="submit" value="получить по смс" />
+              <label for="">
+                <input type="checkbox" />
+                <p>
+                  Настоящим подтверждаю, что я ознакомлен с
+                  <a href="#">политикой конфиденциальности</a>
+                </p>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade modal-callback"
+      id="interior"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <h3>
+              получить презентацию <br />
+              интерьеров
+            </h3>
+            <p class="tagline">
+              Оставьте свои контактные данные, <br />
+              и мы пришлем Вам презентацию
+            </p>
+            <form action="">
+              <input type="text" placeholder="Введите имя*" />
+              <input type="tel" placeholder="Введите телефон*" />
+              <input type="submit" value="получить по смс" />
+              <label for="">
+                <input type="checkbox" />
+                <p>
+                  Настоящим подтверждаю, что я ознакомлен с
+                  <a href="#">политикой конфиденциальности</a>
+                </p>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade modal-result"
+      id="result"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <h3>
+              Спасибо, что оставили заявку!
+            </h3>
+            <p class="tagline">
+              Мы скоро свяжемся с Вами!
+            </p>
+            <p class="description">
+              А пока можете посмотреть приветственное видео от основателя “Binny
+              native place” Ивана Мальцева
+            </p>
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/RZ4Z7PyLWb8"> </iframe>
+            </div>
+            <div class="subscription">
+              <p class="subscription__text">
+                Подпишитесь <br />
+                на наш телеграм-канал
+              </p>
+              <a target="_blank" href="#">@binny</a>
+              <img src="img/telega.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="header__fake-modal"></div>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
