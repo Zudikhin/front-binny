@@ -100,7 +100,39 @@ $(document).ready(function () {
     });
   });
 
+  $("#result").on("show.bs.modal", function () {
+    var videoSrc = $("#result iframe").attr("src");
+    $("#result iframe").attr(
+      "src",
+      videoSrc +
+        "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1"
+    );
+  });
+
   $("#result").on("hidden.bs.modal", function (e) {
-    $("#result iframe").attr("src", $("#result iframe").attr("src"));
+    $("#result iframe").attr(
+      "src",
+      "https://www.youtube.com/embed/RZ4Z7PyLWb8"
+    );
+  });
+
+  $("form").submit(function () {
+    if ($(this).find("label").find("input[type=checkbox]").is(":checked")) {
+      return true;
+    } else {
+      $(this).find("label").addClass("animate");
+      setTimeout(function () {
+        $("form label").removeClass("animate");
+      }, 800);
+      return false;
+    }
+  });
+
+  $(".calculation__choice span").click(function () {
+    $(".calculation__choice span").removeClass("active");
+    $(this).addClass("active");
+    var attr = $(this).attr("data-target");
+    $(".calculation__tables").css("display", "none");
+    $(".calculation__tables-" + attr).css("display", "flex");
   });
 });
