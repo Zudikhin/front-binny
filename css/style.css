@@ -4046,6 +4046,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 200px;
+}
+
+@media (min-width: 576px) {
+  .nutrition__main .img {
+    height: auto;
+  }
 }
 
 .nutrition__main .img:after {
@@ -4273,6 +4280,13 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  height: 200px;
+}
+
+@media (min-width: 576px) {
+  .ecospace__main .img {
+    height: auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -4565,6 +4579,13 @@ body {
           justify-content: center;
   margin-top: 20px;
   position: relative;
+  height: 240px;
+}
+
+@media (min-width: 576px) {
+  .sleep__main .img {
+    height: auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -5007,6 +5028,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 230px;
+}
+
+@media (min-width: 576px) {
+  .methodology__main .img {
+    height: auto;
+  }
 }
 
 .methodology__main .img:after {
@@ -5628,6 +5656,13 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  height: 210px;
+}
+
+@media (min-width: 576px) {
+  .cave__main .img {
+    height: auto;
+  }
 }
 
 .cave__main .img:after {
@@ -9523,11 +9558,11 @@ body {
 }
 
 .money__main .item a.active {
-  color: red;
+  color: #ff5154;
 }
 
 .money__main .item a:hover {
-  color: red;
+  color: #ff5154;
 }
 
 .city {
@@ -9621,8 +9656,14 @@ body {
 
 .city__text .bold {
   font-size: 20px;
-  color: red;
+  color: #ff5154;
   font-family: "Montserrat-ExtraBold";
+}
+
+@media (min-width: 992px) {
+  .city__text .bold {
+    font-size: 22px;
+  }
 }
 
 .map_novo {
@@ -9722,7 +9763,7 @@ body {
     width: 5px;
     left: 0px;
     top: 4px;
-    background-color: red;
+    background-color: #f2373b;
   }
 }
 
@@ -9872,7 +9913,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid red;
+  border: 1px solid #f2373b;
 }
 
 @media (min-width: 576px) {
@@ -9916,7 +9957,7 @@ body {
 .make__author .content__main p {
   font-family: "Montserrat-Bold";
   font-size: 18px;
-  color: red;
+  color: #f2373b;
   text-align: center;
   margin-top: 20px;
 }
@@ -10154,7 +10195,7 @@ body {
 }
 
 .free__form form p input {
-  background-color: #e8e8e8;
+  background-color: white;
   width: 100%;
   height: 58px;
   margin-top: 10px;
@@ -10168,7 +10209,7 @@ body {
 
 .free__form form p input[name="your-name"] {
   padding-left: 50px;
-  background: #e8e8e8 url(../img/free/user_icon.png) no-repeat;
+  background: white url(../img/free/user_icon.png) no-repeat;
   background-position-x: 0%;
   background-position-y: 0%;
   background-position: 20px;
@@ -10190,7 +10231,7 @@ body {
 
 .free__form form p input[name="tel-818"] {
   padding-left: 50px;
-  background: #e8e8e8 url(../img/free/tel_icon.png) no-repeat;
+  background: white url(../img/free/tel_icon.png) no-repeat;
   background-position-x: 0%;
   background-position-y: 0%;
   background-position: 20px;
@@ -10213,7 +10254,7 @@ body {
 
 .free__form form p input[name="email"] {
   padding-left: 50px;
-  background: #e8e8e8 url(../img/free/mail_icon.png) no-repeat;
+  background: white url(../img/free/mail_icon.png) no-repeat;
   background-position-x: 0%;
   background-position-y: 0%;
   background-position: 20px;
@@ -10236,7 +10277,7 @@ body {
 
 .free__form form p input[name="city"] {
   padding-left: 50px;
-  background: #e8e8e8 url(../img/free/geo_cion.png) no-repeat;
+  background: white url(../img/free/geo_cion.png) no-repeat;
   background-position-x: 0%;
   background-position-y: 0%;
   background-position: 20px;
