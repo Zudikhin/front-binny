@@ -10818,7 +10818,7 @@ body {
 
 @media (min-width: 1200px) {
   .invest-safety {
-    margin-top: 120px;
+    margin-top: 60px;
   }
 }
 
@@ -10859,7 +10859,7 @@ body {
 
 @media (min-width: 1200px) {
   .invest-legal {
-    margin-top: 120px;
+    margin-top: 60px;
   }
 }
 
@@ -10900,7 +10900,7 @@ body {
 
 @media (min-width: 1200px) {
   .invest-administrator {
-    margin-top: 120px;
+    margin-top: 60px;
   }
 }
 
@@ -10941,7 +10941,7 @@ body {
 
 @media (min-width: 1200px) {
   .invest-marketing {
-    margin-top: 120px;
+    margin-top: 60px;
   }
 }
 
@@ -11044,7 +11044,7 @@ body {
 
 @media (min-width: 1200px) {
   .invest-equipment {
-    margin-top: 120px;
+    margin-top: 60px;
   }
 }
 
@@ -11307,18 +11307,23 @@ body {
 
 @media (min-width: 1200px) {
   .invest__title {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 
 .efficiency {
   margin-top: 30px;
+  background-color: #fcfcfc;
 }
 
 @media (min-width: 1200px) {
   .efficiency {
-    margin-top: 70px;
+    margin-top: 50px;
   }
+}
+
+.efficiency__title {
+  margin-top: 30px;
 }
 
 .efficiency__title h2 {
@@ -12087,10 +12092,22 @@ body {
   background-color: #f2373b;
 }
 
+.calculation__tables {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
 @media (min-width: 1200px) {
   .calculation__tables {
     position: relative;
     display: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
