@@ -135,4 +135,8 @@ $(document).ready(function () {
     $(".calculation__tables").css("display", "none");
     $(".calculation__tables-" + attr).css("display", "flex");
   });
+
+  $(".answer__list_main .item .item__title").click(function () {
+    $(this).parent().toggleClass("active");
+  });
 });
