@@ -139,4 +139,10 @@ $(document).ready(function () {
   $(".answer__list_main .item .item__title").click(function () {
     $(this).parent().toggleClass("active");
   });
+
+  $("#articlesBtn").click(function () {
+    $(this).parent().toggleClass("active");
+  });
+
+  $("#myCalendar").simpleCalendar();
 });

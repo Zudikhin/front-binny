@@ -1,0 +1,213 @@
+.calendar {
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+  text-align: center;
+  font: 15px/1em inherit;
+  color: #545a5c;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 45px;
+}
+.calendar a {
+  text-decoration: none;
+  color: inherit;
+}
+.calendar header {
+  background-color: #ebebeb;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.calendar header .simple-calendar-btn {
+  /* display: inline-block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #cbd1d2;
+  border-radius: 50%;
+  border: 2px solid #cbd1d2; */
+}
+
+.calendar header .btn-prev {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.calendar header .btn-next {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* .calendar header .simple-calendar-btn:hover {
+    background: #CBD1D2;
+    color: white; } */
+.calendar header .simple-calendar-btn:before {
+  content: "";
+  background: url(../img/blog/sidebar/triangle.png);
+  position: absolute;
+  background-size: 100%;
+  width: 11px;
+  height: 9px;
+  /* transform: rotate(45deg); */
+}
+.calendar header .btn-prev {
+  top: 12px;
+  left: 20px;
+  transform: rotate(90deg);
+  /* transform: rotate(-180deg); */
+}
+.calendar header .btn-next {
+  top: 22px;
+  right: 20px;
+  transform: rotate(-90deg);
+}
+
+.calendar header .month {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-family: "Montserrat-Bold";
+  font-size: 16px;
+  color: black;
+}
+.calendar header .month .year {
+  font-family: "Montserrat-Bold";
+  font-size: 16px;
+  color: black;
+  position: relative;
+  margin-left: 5px;
+}
+.calendar header .month .year::before {
+  content: ",";
+  position: absolute;
+  left: -5px;
+  bottom: 0px;
+}
+.calendar table {
+  width: 100%;
+  border-spacing: 0px;
+  margin-top: 18px;
+}
+.calendar thead {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.calendar td {
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  color: black;
+}
+.calendar .day {
+  position: relative;
+  display: inline-block;
+  border: 2px solid transparent;
+  /* cursor: pointer; */
+}
+/* .calendar .day:hover {
+  border: 2px solid #6691cc;
+} */
+.calendar .day.today {
+  background: #232323;
+  border-radius: 4px;
+  color: white;
+  width: 100%;
+}
+.calendar .day.today.has-event:after {
+  background: white;
+}
+.calendar .day.wrong-month {
+  color: #cbd1d2;
+}
+/* .calendar .day.wrong-month:hover {
+  border: 2px solid transparent;
+} */
+.calendar .day.has-event:after {
+  content: "";
+  position: absolute;
+  top: calc(50% + 0.6em);
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #6691cc;
+}
+.calendar .day.disabled {
+  cursor: default;
+}
+/* .calendar .day.disabled:hover {
+  border: 2px solid transparent;
+} */
+.calendar .event-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 70px;
+  background: #545a5c;
+  box-sizing: border-box;
+}
+.calendar .event-container .event-wrapper {
+  overflow-y: auto;
+  max-height: 100%;
+}
+.calendar .event-container .close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.calendar .event-container .close:before,
+.calendar .event-container .close:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #cbd1d2;
+}
+.calendar .event-container .close:before {
+  transform: rotate(45deg);
+}
+.calendar .event-container .close:after {
+  transform: rotate(-45deg);
+}
+.calendar .event-container .event {
+  position: relative;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  background: #6691cc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+  text-align: left;
+  color: white;
+}
+.calendar .event-container .event-date {
+  margin-bottom: 1em;
+}
+.calendar .event-container .event-hour {
+  float: right;
+}
+.calendar .event-container .event-summary {
+  font-weight: 600;
+}
+.calendar .filler {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #545a5c;
+  transform: translate(-50%, -50%);
+}
